@@ -14,7 +14,7 @@ Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene d
 4. Entregar un modelo y medidas DAX listos para replicar en Power BI.
 
 
-## 📌 Resumen ejecutivo / KPIs (desde dashboard)
+## 📌 Resumen Dashboard / KPIs 
 
 * **Ingresos Totales (estimados):** \$444.66 M
 * **Ventas (unidades o scor):** 460 mil
