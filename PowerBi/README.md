@@ -16,8 +16,6 @@ Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene d
 
 ## 📌 Resumen ejecutivo / KPIs (desde dashboard)
 
-> Valores extraídos del informe Power BI incluido (representativos del snapshot):
-
 * **Ingresos Totales (estimados):** \$409,54M
 * **Ventas (unidades o score):** 396 mil
 * **Ticket Promedio:** \$1,88M
