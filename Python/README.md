@@ -1,7 +1,7 @@
 # 🛒 Análisis de Ventas Walmart
 
 ## 📝 Descripción
-Este proyecto presenta un **análisis exploratorio y visual** aplicado a un dataset de transacciones de Walmart. El objetivo es inspeccionar y limpiar los datos, identificar patrones de compra, describir comportamientos por segmento (género, edad, ciudad), y extraer conclusiones accionables para análisis posteriores (modelado o segmentación).
+Este proyecto presenta un **Análisis exploratorio y visual** aplicado a un dataset de transacciones de Walmart. El objetivo es inspeccionar y limpiar los datos, identificar patrones de compra, describir comportamientos por segmento (género, edad, ciudad), y extraer conclusiones accionables para análisis posteriores (modelado o segmentación).
 
 ## 🎯 Objetivos
 - Explorar y limpiar el dataset.  
