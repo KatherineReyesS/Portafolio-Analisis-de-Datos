@@ -24,8 +24,6 @@ Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene d
 * **Transacciones (rows):** 218
 * **Fecha Última Actualización:** 19-02-2024
 
-> Nota: los valores anteriores se basan en cálculos del `.pbix`. Recomendamos validar la definición exacta (por ejemplo, si `Sales Volume` es unidades reales o un score de popularidad) antes de usar estos KPIs para decisiones operativas.
-
 ## 📊 Hallazgos clave (resumen)
 
 * **Concentración por término:** `jackets` representa \~75% del ingreso relativo en el snapshot; otras categorías relevantes: `shoes`, `t-shirts`, `sweaters`, `jeans`.
