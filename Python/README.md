@@ -26,11 +26,6 @@ Este proyecto presenta un **Análisis exploratorio y visual** aplicado a un data
 7. **Análisis multivariado:** matriz de correlación y heatmap; groupby para cruces (`Product_Category` x `City_Category`).  
 8. **Resumen & recomendaciones:** top combinaciones, top usuarios por gasto y propuestas de features (RFM, variables temporales).
 
-9. **Recomendaciones para pasos siguientes**
-   - Crear features temporales si existe fecha (mes, día de semana).  
-   - Generar features por cliente (RFM: recencia, frecuencia, monto medio).  
-   - Preparar codificación de categóricas y evaluar modelos robustos a outliers.
-
 ## 🔍 Resumen
 
 - **Registros procesados:** 550,068  
