@@ -56,7 +56,7 @@ En cuanto a las estrategias de Promoción y Estacionalidad, la distribución es 
 
 En el aspecto técnico, la calidad de los datos es buena, con pocos nulos y consistencia en price, aunque se trata de un snapshot estático, lo que limita la posibilidad de analizar tendencias temporales y comportamientos longitudinales.
 
-##🔑 Recomendaciones Clave
+## 🔑 Recomendaciones Clave
 
 1. 👕 Diversificar el portafolio: reducir la dependencia de jackets potenciando categorías secundarias (sweaters, t-shirts, shoes).
 2. 🛒 Optimizar el layout: reforzar posiciones de alto rendimiento (Aisle, End-cap) y probar ajustes en Front of Store.
