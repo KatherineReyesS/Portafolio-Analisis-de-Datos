@@ -37,8 +37,7 @@ Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene d
 * `Product ID` — Identificador único.
 * `name` — Nombre del producto.
 * `sku` — Código de inventario.
-* `price` — Precio (USD).
-* `Sales Volume` — Valor reportado por scraping (interpreta como unidades o score según nota).
+* `price` — Precio (USD)..
 * `terms` — Etiqueta de búsqueda/colección.
 * `Product_Position` — Ubicación en tienda / presencia en página (Aisle, End-cap, Front of Store).
 * `Promotion` — Indicador si estaba en promoción.
