@@ -17,32 +17,14 @@ Este proyecto presenta un **Análisis exploratorio y visual** aplicado a un data
 
 ## 🔬 Metodología
 
-1. **Carga y exploración inicial**
-   - `df.info()`, `df.describe()`, conteo de nulos y visualización (heatmap) para revisar estructura y calidad del dataset.
-
-2. **Limpieza y ajuste de tipos**
-   - Normalización de nombres de columnas y conversión de columnas a tipos adecuados (`category`, `int`, `float`).
-
-3. **Manejo de valores faltantes**
-   - Imputación automática: mediana para variables numéricas; moda (o `'Desconocido'`) para categóricas.
-   - Verificación posterior de nulos (debe quedar en 0 por columna).
-
-4. **Detección y tratamiento de outliers**
-   - Detección por IQR (Q1 - 1.5*IQR / Q3 + 1.5*IQR).
-   - Opción de imputar outliers por la **mediana calculada sin outliers** para minimizar sesgos.
-
-5. **Análisis descriptivo (univariado)**
-   - Histogramas y KDE para `Purchase`, boxplots para vars numéricas, conteo de categorías para variables categóricas.
-
-6. **Análisis bivariado**
-   - Boxplots por grupo (ej. `Purchase` vs `Gender` / `Age`) y scatterplots cuando aplique.
-
-7. **Análisis multivariado**
-   - Matriz de correlación y heatmap para identificar relaciones entre variables numéricas.
-   - Cruces (groupby) para promedios de `Purchase` por `Product_Category` y `City_Category`.
-
-8. **Resúmenes y top insights**
-   - Tablas con top combinaciones (categoria-ciudad) y top usuarios por gasto acumulado.
+1. **Carga y exploración inicial:** `df.info()`, `df.describe()`, conteo de nulos y heatmap para revisar estructura y calidad.  
+2. **Limpieza y ajuste de tipos:** normalización de nombres y conversión a `category` / `int` / `float`.  
+3. **Manejo de nulos:** en este dataset no se detectaron valores faltantes; el notebook incluye funciones de imputación (mediana/moda) por compatibilidad.  
+4. **Detección y tratamiento de outliers:** IQR (Q1 - 1.5*IQR / Q3 + 1.5*IQR). Opción de imputar outliers con la mediana sin outliers.  
+5. **Análisis descriptivo (univariado):** histogramas y KDE para `Purchase`, boxplots para numéricas, conteos para categóricas.  
+6. **Análisis bivariado:** boxplots por grupo (ej. `Purchase` vs `Gender`, `Age`), scatter plots si procede.  
+7. **Análisis multivariado:** matriz de correlación y heatmap; groupby para cruces (`Product_Category` x `City_Category`).  
+8. **Resumen & recomendaciones:** top combinaciones, top usuarios por gasto y propuestas de features (RFM, variables temporales).
 
 9. **Recomendaciones para pasos siguientes**
    - Crear features temporales si existe fecha (mes, día de semana).  
