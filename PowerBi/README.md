@@ -28,7 +28,7 @@ Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene d
 * **% Ingresos:** muestra que `jackets` concentra la mayoría del ingreso relativo en el snapshot (~68–75% según vista y selección).; otras categorías relevantes: `shoes`, `t-shirts`, `sweaters`, `jeans`.
 * **Product Position:** la participación por posición de producto, según el panel actual, es: Aisle 37,74%, End-cap 32,51%, Front of Store 29,75% — lo que indica que la mayor parte del ingreso estimado proviene de productos en pasillos y end-caps.
 * **Promoción y estacionalidad:** la muestra muestra una distribución pareja entre productos en promoción y estacionales. Yes ≈ 51,96% / No ≈ 48,04%.
-* **Top productos:** el top 15 muestra líderes como PLAID OVERSHIRT (≈10,9 mil), seguido por varios bomber/overshirts en el rango 7–7.4 mil. Estos items concentran ingresos unitarios altos y son prioritarios para análisis de surtido.
+* **Top 15 productos:** el top muestra líderes como PLAID OVERSHIRT (≈10,9 mil), seguido por varios bomber/overshirts en el rango 7–7.4 mil. Estos items concentran ingresos unitarios altos y son prioritarios para análisis de surtido.
 * **Calidad de datos:** pocos nulos en `name` y `description`; `price` consistente y en USD.
 
 
