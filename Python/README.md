@@ -60,8 +60,8 @@ Este proyecto presenta un **Análisis exploratorio y visual** aplicado a un data
   - Mediana ≈ **8,038.00**
   - Rango: **12** (min) – **~23,961** (max)
 
-**Hallazgos rápidos:**  
-El dataset quedó limpio y sin nulos después de la imputación automática. `Purchase` presenta amplia dispersión y múltiples picos en la distribución. Entre las categóricas, se observa predominio masculino, mayor representación del grupo etario 26–35 y mayor concentración de clientes en la categoría de ciudad B. En la matriz de correlación destaca una correlación negativa entre `Product_Category` y `Purchase` (~ -0.37).
+**📌 Hallazgos rápidos:**  
+El dataset no presentó valores faltantes en origen. `Purchase` muestra amplia dispersión y varios picos en la distribución. Entre las categóricas, se observa predominio masculino, mayor representación del grupo etario 26–35 y mayor concentración de clientes en la categoría de ciudad B. En la matriz de correlación destaca una correlación negativa entre `Product_Category` y `Purchase` (~ -0.37).
 
 ## ▶️ Cómo ejecutar
 ### En Google Colab
