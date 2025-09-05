@@ -32,13 +32,11 @@ Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene d
 * **Calidad de datos:** pocos nulos en `name` y `description`; `price` consistente y en USD.
 
 
-## 🛠 Cómo usar (rápido)
+## 🛠 Cómo usar 
 
-1. Clona el repositorio.
+1. Descarga el archivo .pbix desde la carpeta /pbix/.
 2. Abre `Power Bi Katherine Reyes.pbix` en Power BI Desktop.
-3. En Power Query revisa la importación del CSV (selecciona `;` como separador si es necesario).
-4. Verifica tabla de fechas (`DimDate`) y relaciones en star schema.
-5. Revisa y valida las medidas DAX en la página de KPIs.
+3. Explora las distintas páginas y filtros interactivos.
 
 
 ## 🧮 Medidas DAX recomendadas
@@ -66,7 +64,6 @@ DIVIDE(
 ```Ticket Promedio = DIVIDE([Ingresos Totales], [Transacciones], 0)
 ```
 
-
 ## 📋 Diccionario breve de columnas
 
 * `Product ID` — Identificador único.
@@ -77,15 +74,7 @@ DIVIDE(
 * `terms` — Etiqueta de búsqueda/colección.
 * `Product_Position` — Ubicación en tienda / presencia en página (Aisle, End-cap, Front of Store).
 * `Promotion` — Indicador si estaba en promoción.
-* `scraped_at` — Timestamp de captura.
 
-## 🔎 Recomendaciones operativas
-
-1. **Clarificar semántica de `Sales Volume`.** Si son unidades, las medidas y KPIs quedan; si son scores, ajustar interpretación.
-2. **Automatizar scraping** en ventanas regulares (diarias/semanales) para análisis temporal y tendencias.
-3. **Publicar dataset en OneDrive/SharePoint** y configurar gateway para refrescos automáticos del `.pbix` si se publica en Power BI Service.
-4. **Extender diccionario** y documentar supuestos en `docs/medidas_dax.md`.
-5. **Normalizar `terms`** y agrupar sinónimos (p.ej. `t-shirts` vs `t shirts`) para evitar dispersiones en análisis.
 
 ## ✍️ Conclusión
 
