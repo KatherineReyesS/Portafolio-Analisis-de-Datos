@@ -32,38 +32,6 @@ Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene d
 * **Calidad de datos:** pocos nulos en `name` y `description`; `price` consistente y en USD.
 
 
-## 🛠 Cómo usar 
-
-1. Descarga el archivo .pbix desde la carpeta /pbix/.
-2. Abre `Power Bi Katherine Reyes.pbix` en Power BI Desktop.
-3. Explora las distintas páginas y filtros interactivos.
-
-
-## 🧮 Medidas DAX recomendadas
-
-**%Ingresos**
-```% Ingresos = 
-DIVIDE(
-    [Ingresos Totales],
-    CALCULATE([Ingresos Totales], ALLSELECTED(Zara_Sales_Analysis)),
-    0
-)```
-
-**Unidades vendidas**
-
-```Ventas = SUM(Zara_Sales_Analysis[Sales_Volume])
-```
-
-**Ingresos totales**
-
-```Ingresos Totales = SUMX(Zara_Sales_Analysis, Zara_Sales_Analysis[Sales_Volume] * Zara_Sales_Analysis[price])
-```
-
-**Ticket promedio**
-
-```Ticket Promedio = DIVIDE([Ingresos Totales], [Transacciones], 0)
-```
-
 ## 📋 Diccionario breve de columnas
 
 * `Product ID` — Identificador único.
@@ -76,6 +44,15 @@ DIVIDE(
 * `Promotion` — Indicador si estaba en promoción.
 
 
-## ✍️ Conclusión
+## 🛠 Cómo usar 
 
-El análisis entregado permite una visión rápida del catálogo y su distribución por términos y posición de producto. Es una base adecuada para: priorizar scraping, detectar SKUs de alto impacto y generar tableros operativos. Para avanzar, recomendamos operacionalizar la recolección de datos y formalizar el modelo con dimensiones y medidas documentadas.
+1. Descarga el archivo .pbix desde la carpeta /pbix/.
+2. Abre `Power Bi Katherine Reyes.pbix` en Power BI Desktop.
+3. Explora las distintas páginas y filtros interactivos.
+
+## ✍️ Conclusión
+El análisis de la muestra de Zara (19-02-2024) muestra que los ingresos se concentran fuertemente en jackets (~70%), lo que refleja una dependencia significativa de un solo tipo de producto. Asimismo, las posiciones de exhibición (Aisle y End-cap) aportan mayor valor, lo que confirma la relevancia del merchandising en tienda.
+
+En cuanto a las estrategias de Promoción y Estacionalidad, la distribución es equilibrada (~50% cada una), lo que indica que no existe una clara ventaja competitiva en estos frentes. El análisis del Top 15 productos destaca que los overshirts y bomber jackets son piezas clave del surtido por su alta rotación e ingresos unitarios.
+
+En el aspecto técnico, la calidad de los datos es buena, con pocos nulos y consistencia en price, aunque se trata de un snapshot estático, lo que limita la posibilidad de analizar tendencias temporales y comportamientos longitudinales.
