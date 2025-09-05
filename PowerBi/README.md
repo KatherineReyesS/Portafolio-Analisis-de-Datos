@@ -8,28 +8,28 @@ Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene d
 
 ## 🎯 Objetivo del análisis
 
-1. Identificar los términos y categorías con mayor presencia en el catálogo.
-2. Estimar ingresos relativos por `terms` y `product_position` (métrica derivada).
+1. Identificar términos y productos con mayor incidencia en el catálogo.
+2. Calcular KPIs clave (Ingresos estimados, Ventas, Ticket Promedio, Precio Medio, Transacciones).
 3. Detectar problemas de calidad de datos (nulos, duplicados, formatos).
 4. Entregar un modelo y medidas DAX listos para replicar en Power BI.
 
 
 ## 📌 Resumen ejecutivo / KPIs (desde dashboard)
 
-* **Ingresos Totales (estimados):** \$409,54M
-* **Ventas (unidades o score):** 396 mil
-* **Ticket Promedio:** \$1,88M
-* **Precio Medio:** \$1,03M
-* **Transacciones (rows):** 218
+* **Ingresos Totales (estimados):** \$444.66 M
+* **Ventas (unidades o scor):** 460 mil
+* **Ticket Promedio:** \$1,76M
+* **Precio Medio:** \$967,5495
+* **Transacciones (rows):** 252
 * **Fecha Última Actualización:** 19-02-2024
 
-## 📊 Hallazgos clave (resumen)
+## 📊 Hallazgos clave 
 
-* **Concentración por término:** `jackets` representa \~75% del ingreso relativo en el snapshot; otras categorías relevantes: `shoes`, `t-shirts`, `sweaters`, `jeans`.
-* **Product Position:** las posiciones como `Aisle` y `End-cap` concentran la mayor proporción de ingresos (43% y 29% en el dashboard respectivamente).
-* **Promoción y estacionalidad:** la muestra muestra una distribución pareja entre productos en promoción y estacionales (\~50% cada uno).
-* **Top productos:** el top 15 de `name` muestra items con ingresos unitarios altos (ej.: PLAID OVERSHIRT, BOMBER JACKETS), útil para análisis de surtido.
-* **Calidad de datos:** pocos nulos en `name` y `description`; `price` consistente y en USD. El dataset es un snapshot corto (19-02-2024), por lo que no captura dinámicas temporales.
+* **% Ingresos:** muestra que `jackets` concentra la mayoría del ingreso relativo en el snapshot (~68–75% según vista y selección).; otras categorías relevantes: `shoes`, `t-shirts`, `sweaters`, `jeans`.
+* **Product Position:** la participación por posición de producto, según el panel actual, es: Aisle 37,74%, End-cap 32,51%, Front of Store 29,75% — lo que indica que la mayor parte del ingreso estimado proviene de productos en pasillos y end-caps.
+* **Promoción y estacionalidad:** la muestra muestra una distribución pareja entre productos en promoción y estacionales. Yes ≈ 51,96% / No ≈ 48,04%.
+* **Top productos:** el top 15 muestra líderes como PLAID OVERSHIRT (≈10,9 mil), seguido por varios bomber/overshirts en el rango 7–7.4 mil. Estos items concentran ingresos unitarios altos y son prioritarios para análisis de surtido.
+* **Calidad de datos:** pocos nulos en `name` y `description`; `price` consistente y en USD.
 
 
 ## 🛠 Cómo usar (rápido)
@@ -41,49 +41,31 @@ Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene d
 5. Revisa y valida las medidas DAX en la página de KPIs.
 
 
-## 🧾 Metodología (ETL / Power Query)
-
-1. **Importación:** leer CSV con `;` como separador.
-2. **Normalización:** trim + lower para `terms`, `section`, `brand`.
-3. **Fechas:** convertir `scraped_at` a `DateTime`; crear `DimDate` y columnas Year/Month/Day.
-4. **Duplicados:** identificar por `sku` / `Product ID` y decidir agregación.
-5. **Tipos:** asegurar `price` y `Sales Volume` como numéricos; revisar `currency`.
-6. **Modelado:** Fact table `Fact_Catalog` (sales\_volume, price, product\_id, term\_id, date\_id) + dimensiones `Dim_Product`, `Dim_Terms`, `DimDate`.
-
 ## 🧮 Medidas DAX recomendadas
 
-> Las siguientes medidas son plantillas; adapta nombres de tablas/columnas según tu modelo.
+**%Ingresos**
+```% Ingresos = 
+DIVIDE(
+    [Ingresos Totales],
+    CALCULATE([Ingresos Totales], ALLSELECTED(Zara_Sales_Analysis)),
+    0
+)```
 
-**Unidades vendidas (UnitsSold)**
+**Unidades vendidas**
 
-```DAX
-UnitsSold = SUM(Fact_Catalog[Sales Volume])
+```Ventas = SUM(Zara_Sales_Analysis[Sales_Volume])
 ```
 
-**Ingresos estimados (TotalSales)**
+**Ingresos totales**
 
-```DAX
-TotalSales = SUMX(Fact_Catalog, Fact_Catalog[Sales Volume] * Fact_Catalog[price])
+```Ingresos Totales = SUMX(Zara_Sales_Analysis, Zara_Sales_Analysis[Sales_Volume] * Zara_Sales_Analysis[price])
 ```
 
-**Ticket promedio (AvgTicket)**
+**Ticket promedio**
 
-```DAX
-AvgTicket = DIVIDE([TotalSales], [UnitsSold])
+```Ticket Promedio = DIVIDE([Ingresos Totales], [Transacciones], 0)
 ```
 
-**% Productos en Promoción (PctPromoted)**
-
-```DAX
-PctPromoted = DIVIDE(CALCULATE(COUNTROWS(Fact_Catalog), Fact_Catalog[Promotion] = "Yes"), COUNTROWS(Fact_Catalog))
-```
-
-**Top N ventas (ejemplo)**
-
-```DAX
-TopProductsSales =
-CALCULATE([TotalSales], TOPN(15, ALL(Dim_Product[name]), [TotalSales], DESC))
-```
 
 ## 📋 Diccionario breve de columnas
 
