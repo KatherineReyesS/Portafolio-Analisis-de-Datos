@@ -55,3 +55,11 @@ El análisis muestra que los ingresos se concentran fuertemente en jackets (~70%
 En cuanto a las estrategias de Promoción y Estacionalidad, la distribución es equilibrada (~50% cada una), lo que indica que no existe una clara ventaja competitiva en estos frentes. El análisis del Top 15 productos destaca que los overshirts y bomber jackets son piezas clave del surtido por su alta rotación e ingresos unitarios.
 
 En el aspecto técnico, la calidad de los datos es buena, con pocos nulos y consistencia en price, aunque se trata de un snapshot estático, lo que limita la posibilidad de analizar tendencias temporales y comportamientos longitudinales.
+
+🔑 Recomendaciones Clave
+
+1.👕 Diversificar el portafolio: reducir la dependencia de jackets potenciando categorías secundarias (sweaters, t-shirts, shoes).
+2.🛒 Optimizar el layout: reforzar posiciones de alto rendimiento (Aisle, End-cap) y probar ajustes en Front of Store.
+3.🎯 Estrategia comercial: revisar el impacto de promociones y estacionalidad para identificar palancas reales de conversión.
+4.📈 Top productos: consolidar los overshirts y bomber jackets como referentes de la colección, garantizando disponibilidad y control de stock.
+5.🛠️ Mejorar la base de datos: pasar de snapshots a un esquema de actualización continua vía API o web scraping programado, permitiendo análisis dinámicos y mayor trazabilidad.
