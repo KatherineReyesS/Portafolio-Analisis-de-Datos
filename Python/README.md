@@ -32,5 +32,4 @@ Este proyecto presenta un **Análisis exploratorio y visual** aplicado a un data
 1. Abrir el notebook:  
    `https://colab.research.google.com/drive/1dYDLlIoA2wduTCRMI_QKnVT586UO9jRQ?authuser=1`  
 2. `Runtime > Run all` para ejecutar todas las celdas.  
-3. Ajusta la ruta de carga si usas archivos desde tu Drive o GitHub.
 
