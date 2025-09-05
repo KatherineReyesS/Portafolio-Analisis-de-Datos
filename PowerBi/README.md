@@ -1,9 +1,9 @@
 # 📘 Informe — Análisis de Catálogo y Ventas - Zara
 
-##🏷️ Sobre Zara
+## 🏷️ Sobre Zara
 Zara es una compañía internacional de moda fundada en 1975 en Arteixo, España, integrante del grupo Inditex. Su modelo de fast fashion se caracteriza por ciclos de diseño y reposición muy cortos y una alta rotación de productos, lo que hace que el catálogo sea extremadamente dinámico. Por eso, los snapshots de catálogo (scraping) son herramientas útiles para entender surtido, precios y presencia de productos en un momento dado, pero no deben confundirse con series históricas de ventas.
 
-##🧭 Contexto del análisis
+## 🧭 Contexto del análisis
 Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene de un scraping puntual del catálogo (snapshot). El objetivo es entender la composición del catálogo por términos (`terms`), posiciones de producto (`Product_Position`), y analizar distribución de precios y volumen capturado. Estos insights sirven como insumo para decisiones de merchandising y priorización de scraping/monitorización.
 
 ## 🎯 Objetivo del análisis
