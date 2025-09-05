@@ -1,7 +1,5 @@
 # 📘 Informe — Análisis de Catálogo y Ventas - Zara
 
-> **Descripción breve:** Este repositorio centraliza los artefactos del análisis del catálogo de Zara: el dataset original (`/data/Zara_Sales_Analysis.csv`) y el reporte interactivo en Power BI (`/pbix/Power Bi Katherine Reyes.pbix`). El objetivo es describir la data, documentar las transformaciones y entregables, y presentar hallazgos y recomendaciones en el estilo usado por el equipo.
-
 ## 🧭 Contexto del negocio
 
 Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene de un scraping puntual del catálogo (snapshot). El objetivo es entender la composición del catálogo por términos (`terms`), posiciones de producto (`Product_Position`), y analizar distribución de precios y volumen capturado. Estos insights sirven como insumo para decisiones de merchandising y priorización de scraping/monitorización.
