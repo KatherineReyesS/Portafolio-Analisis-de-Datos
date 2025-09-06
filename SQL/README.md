@@ -10,7 +10,7 @@ Contiene instrucciones rápidas, descripción de tablas y consultas listas para 
 USE amazon_bestsellers;
 SHOW TABLES;
 
-📁 Qué encontrarás
+## 📁 Qué encontrarás
 
 Script Amazon_bestseller.sql con la estructura y datos.
 
@@ -20,7 +20,7 @@ Tablas normalizadas: producto, clasificacion, precio_historico, foto_producto, c
 
 Archivos con ejercicios y consultas por secciones.
 
-🧾 Tablas principales (resumen)
+## 🧾 Tablas principales (resumen)
 
 datos_crudos — Registros originales (asin, product_title, product_price, product_star_rating, product_num_ratings, product_url, product_photo, rank_change_label, country, page, fecha_import, ...).
 
@@ -33,6 +33,3 @@ precio_historico — Precios guardados por fecha.
 foto_producto — URLs de imagen por producto.
 
 categoria, mercado, moneda, valoracion_historica, fuente_datos, audit_log — Metadatos y tablas auxiliares.
-
-✨ Consultas rápidas (copiar/pegar)
-▶️ Ver datos crudos (primeros registros)
