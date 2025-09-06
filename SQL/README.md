@@ -5,12 +5,12 @@ Contiene instrucciones rápidas, descripción de tablas y consultas listas para 
 
 ---
 
-## 📌 Ejecutar (rápido)
+##📌 Ejecutar (rápido)
 ```sql
 USE amazon_bestsellers;
 SHOW TABLES;
 
-## 📁 Qué encontrarás
+##📁 Qué encontrarás
 
 Script Amazon_bestseller.sql con la estructura y datos.
 
