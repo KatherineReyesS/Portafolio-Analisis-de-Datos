@@ -50,11 +50,11 @@ Zara mantiene un catálogo extenso y dinámico; el presente análisis proviene d
 3. Explora las distintas páginas y filtros interactivos.
 
 ## ✍️ Conclusión
-El análisis muestra que los ingresos se concentran fuertemente en jackets (~70%), lo que refleja una dependencia significativa de un solo tipo de producto. Asimismo, las posiciones de exhibición (Aisle y End-cap) aportan mayor valor, lo que confirma la relevancia del merchandising en tienda.
+>El análisis muestra que los ingresos se concentran fuertemente en jackets (~70%), lo que refleja una dependencia significativa de un solo tipo de producto. Asimismo, las posiciones de exhibición (Aisle y End-cap) aportan mayor valor, lo que confirma la relevancia del merchandising en tienda.
 
-En cuanto a las estrategias de Promoción y Estacionalidad, la distribución es equilibrada (~50% cada una), lo que indica que no existe una clara ventaja competitiva en estos frentes. El análisis del Top 15 productos destaca que los overshirts y bomber jackets son piezas clave del surtido por su alta rotación e ingresos unitarios.
+>En cuanto a las estrategias de Promoción y Estacionalidad, la distribución es equilibrada (~50% cada una), lo que indica que no existe una clara ventaja competitiva en estos frentes. El análisis del Top 15 productos destaca que los overshirts y bomber jackets son piezas clave del surtido por su alta rotación e ingresos unitarios.
 
-En el aspecto técnico, la calidad de los datos es buena, con pocos nulos y consistencia en price, aunque se trata de un snapshot estático, lo que limita la posibilidad de analizar tendencias temporales y comportamientos longitudinales.
+>En el aspecto técnico, la calidad de los datos es buena, con pocos nulos y consistencia en price, aunque se trata de un snapshot estático, lo que limita la posibilidad de analizar tendencias temporales y comportamientos longitudinales.
 
 ## 🔑 Recomendaciones Clave
 
